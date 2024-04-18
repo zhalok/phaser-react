@@ -5,10 +5,12 @@ import { MainMenu } from "./scenes/MainMenu";
 import Phaser from "phaser";
 import { Preloader } from "./scenes/Preloader";
 import GameScene from "./scenes/GameSene";
+import { SpriteAnimation } from "./scenes/SpreiteAnimation";
+import MovingObjects from "./scenes/MovingObject";
 
 // Find out more information about the Game Config at:
 // https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
-const config = {
+export const config = {
     type: Phaser.AUTO,
     width: 500,
     height: 500,
@@ -21,7 +23,7 @@ const config = {
             debug: true,
         },
     },
-    scene: [GameScene],
+    scene: [SpriteAnimation],
 };
 
 const StartGame = (parent) => {

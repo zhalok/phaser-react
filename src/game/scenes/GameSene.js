@@ -23,7 +23,6 @@ export default class GameScene extends Phaser.Scene {
         this.basket = this.physics.add
             .image(getRandomNumber(0, 500), 450, "basket")
             .setScale(0.5);
-        console.log("basket", this.basket);
         this.basket.setImmovable(true);
         this.basket.body.allowGravity = false;
         this.basket.setCollideWorldBounds(true);
